@@ -3,7 +3,7 @@
 <body class="post-template">
   <div class="site-wrapper"> 
 
-{{ partial "header-sori" . }}
+{{ partial "header-post" . }}
 
 <main id="site-main" class="site-main outer" role="main">
   <div class="inner">
@@ -15,18 +15,18 @@
 <aside class="read-next outer">
   <div class="inner">
     <div class="read-next-feed">      
-      {{ partial "readnext-random-sori" . }}
+      {{ partial "readnext-random" . }}
       {{with .NextInSection}}
-      {{ partial "readnext-article-sori" . }}
+      {{ partial "readnext-article" . }}
       {{end}}
       {{with .PrevInSection}}
-      {{ partial "readnext-article-sori" . }}
+      {{ partial "readnext-article" . }}
       {{end}}
     </div>
   </div>
 </aside>
 
-{{ partial "header-floating-sori" . }}
+{{ partial "header-floating" . }}
 
 {{ partial "footer" . }}
 </div>
