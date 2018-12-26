@@ -2,7 +2,7 @@ baseurl         = "/"
 theme           = "slimer"
 languageCode    = "en-GB"
 disqusShortname = ""
-paginate        = 6
+paginate        = 7
 #SectionPagesMenu = "main"
 canonifyurls    = true
 
