@@ -1,0 +1,17 @@
+name = "Slimer"
+license = "MIT"
+licenselink = "Add link here"
+description = ""
+homepage = ""
+tags = ["blog","pages"]
+features = ["disqus", "google analytics"]
+min_version=0.31
+
+[author]
+  name = "Matteo Hertel"
+  homepage = "https://matteohertel.com"
+
+[original]
+  name = "Casper"
+  homepage = "https://github.com/TryGhost/Casper"
+  repo = "https://github.com/TryGhost/Casper"
