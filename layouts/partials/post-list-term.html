@@ -24,7 +24,7 @@
               {{ if .Description }} 
                 <p>{{ .Description | markdownify }}</p>
               {{else}}
-                <p>{{ .Summary | plainify | safeHTML }}{{ if .Truncated }} ... {{end}} </p>
+                <p>{{ .Summary | plainify | truncate 140 | safeHTML }}</p>
               {{end}}
           </section>
       </a>

@@ -1,15 +1,13 @@
 {{ partial "head" . }}
 
-<body class="ctsingle">
+<body class="page-template">
 <div class="site-wrapper"> 
-{{ partial "header" . }}
+{{ partial "header-page" . }}
 
 
 <main id="site-main" class="site-main outer" role="main">
   <div class="inner">
-    <div class="post-feed">
-      {{ partial "page-single" . }}
-    </div>
+      {{ partial "page" . }}
   </div>
 </main>
 

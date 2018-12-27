@@ -35,15 +35,5 @@
 
     </nav>  
 
-    <div class="site-header-content">
-        <h1 class="site-title">{{.Title | title}}</h1>
-
-        <h2 class="site-description">&#x2F;&nbsp;
-          {{ $data := .Data }}
-          {{ range $key, $value := .Data.Terms.Alphabetical }}
-          <a href="{{ $.Site.BaseURL }}{{ $data.Plural }}/{{ $value.Name | urlize }}"> {{ $value.Name }} </a> ({{ $value.Count }})&nbsp;&#x2F;&nbsp;
-          {{ end }}
-        </h2>
-    </div>
   </div>
 </header>
