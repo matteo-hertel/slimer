@@ -63,3 +63,5 @@ typings/
 generated
 exampleSite/theme
 exampleSite/public
+layouts/partials/assets.html
+static/assets
