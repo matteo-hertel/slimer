@@ -3,7 +3,7 @@ author: "Test Author"
 date: 2018-12-asd
 linktitle: Awesomeness
 title: Post n# asd
-authorAvatar: hugo-logo.png
+authorAvatar: logo.png
 
 ---
 
