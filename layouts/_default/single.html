@@ -3,32 +3,32 @@
 <body class="post-template">
   <div class="site-wrapper"> 
 
-{{ partial "header-post" . }}
+    {{ partial "posts/header" . }}
 
-<main id="site-main" class="site-main outer" role="main">
-  <div class="inner">
-    {{ partial "post-single" . }}
-    {{ partial "disqus" . }}
+    <main id="site-main" class="site-main outer" role="main">
+      <div class="inner">
+        {{ partial "posts/single" . }}
+        {{ partial "disqus" . }}
+      </div>
+    </main>
+
+    <aside class="read-next outer">
+      <div class="inner">
+        <div class="read-next-feed">      
+          {{ partial "posts/readnext-random" . }}
+          {{with .NextInSection}}
+          {{ partial "posts/readnext-article" . }}
+          {{end}}
+          {{with .PrevInSection}}
+          {{ partial "posts/readnext-article" . }}
+          {{end}}
+        </div>
+      </div>
+    </aside>
+
+    {{ partial "posts/header-floating" . }}
+
+    {{ partial "footer" . }}
   </div>
-</main>
-
-<aside class="read-next outer">
-  <div class="inner">
-    <div class="read-next-feed">      
-      {{ partial "readnext-random" . }}
-      {{with .NextInSection}}
-      {{ partial "readnext-article" . }}
-      {{end}}
-      {{with .PrevInSection}}
-      {{ partial "readnext-article" . }}
-      {{end}}
-    </div>
-  </div>
-</aside>
-
-{{ partial "header-floating" . }}
-
-{{ partial "footer" . }}
-</div>
-{{ partial "js" . }}
+  {{ partial "js" . }}
 </body></html>

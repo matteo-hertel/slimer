@@ -1,7 +1,7 @@
 {{ partial "head" . }}
 
   <body class="error-template"><div class="site-wrapper">
-  {{ partial "header-error" . }}
+  {{ partial "errors/header" . }}
 
 <main id="site-main" class="site-main outer" role="main">
   <div class="inner">
@@ -18,7 +18,7 @@
 <aside class="outer">
   <div class="inner">
     <div class="post-feed">
-      {{ partial "post-list-term" . }}
+      {{ partial "posts/list-random" . }}
     </div>
   </div>
 </aside>
