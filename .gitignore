@@ -61,7 +61,5 @@ typings/
 .next
 
 generated
-exampleSite/theme
-exampleSite/public
-layouts/partials/assets.html
-static/assets
+dist/
+site/data/webpack.json

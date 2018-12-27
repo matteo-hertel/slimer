@@ -1,5 +1,4 @@
 baseurl         = "/"
-theme           = "slimer"
 languageCode    = "en-GB"
 disqusShortname = ""
 paginate        = 7
