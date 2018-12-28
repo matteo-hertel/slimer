@@ -22,6 +22,7 @@
   "author": "Matteo Hertel <info@matteohertel.com>",
   "license": "MIT",
   "devDependencies": {
+    "@stencil/core": "^0.16.1",
     "assets-webpack-plugin": "^3.9.7",
     "autoprefixer": "^9.4.3",
     "clean-webpack-plugin": "^1.0.0",
