@@ -9,19 +9,26 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf ./dist/ && webpack --mode production --config webpack.prod.config.js",
-    "postbuild": "hugo -d ../dist -s site",
+    "components:build": "stencil build --docs",
+    "components:start": "stencil build --dev --watch --serve",
+    "components:test": "stencil test --spec --e2e",
+    "components:test.watch": "stencil test --spec --e2e --watchAll",
     "dev": "webpack-dev-server --mode development --config webpack.dev.config.js",
-    "start:hugo": "hugo -d ../dist -s site -vw",
     "lint:js": "eslint . --ext js,jsx",
     "lint:js:fix": "eslint . --ext js,jsx --fix",
+    "postbuild": "hugo -d ../dist -s site",
     "preinstall": "npx Skyscanner/ensure-node-env",
     "prettier": "prettier --config .prettierrc --write \"**/*.{js,jsx}\"",
+    "start:hugo": "hugo -d ../dist -s site -vw",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Matteo Hertel <info@matteohertel.com>",
   "license": "MIT",
   "devDependencies": {
+    "@stencil/core": "~0.15.2",
+    "aframe": "^0.8.2",
+    "aframe-environment-component": "^1.1.0",
     "assets-webpack-plugin": "^3.9.7",
     "autoprefixer": "^9.4.3",
     "clean-webpack-plugin": "^1.0.0",
@@ -45,8 +52,5 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ],
-  "dependencies": {
-    "@ionic/core": "^4.0.0-rc.0"
-  }
+  ]
 }
