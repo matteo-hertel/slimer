@@ -63,3 +63,4 @@ typings/
 generated
 dist/
 site/data/webpack.json
+build

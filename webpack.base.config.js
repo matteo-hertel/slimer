@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const path = require('path');
+const stencil = require('@stencil/webpack');
 
 module.exports = {
   entry: {
@@ -60,5 +61,6 @@ module.exports = {
       path: path.join(process.cwd(), 'site/data'),
       prettyPrint: true,
     }),
+    new stencil.StencilPlugin(),
   ],
 };
