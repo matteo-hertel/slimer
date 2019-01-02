@@ -12,6 +12,9 @@ import '@stencil/core';
 
 export namespace Components {
 
+  interface FloatingHeader {}
+  interface FloatingHeaderAttributes extends StencilHTMLAttributes {}
+
   interface MyComponent {
     /**
     * The first name
@@ -44,13 +47,21 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
+    'FloatingHeader': Components.FloatingHeader;
     'MyComponent': Components.MyComponent;
   }
 
   interface StencilIntrinsicElements {
+    'floating-header': Components.FloatingHeaderAttributes;
     'my-component': Components.MyComponentAttributes;
   }
 
+
+  interface HTMLFloatingHeaderElement extends Components.FloatingHeader, HTMLStencilElement {}
+  var HTMLFloatingHeaderElement: {
+    prototype: HTMLFloatingHeaderElement;
+    new (): HTMLFloatingHeaderElement;
+  };
 
   interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
   var HTMLMyComponentElement: {
@@ -59,10 +70,12 @@ declare global {
   };
 
   interface HTMLElementTagNameMap {
+    'floating-header': HTMLFloatingHeaderElement
     'my-component': HTMLMyComponentElement
   }
 
   interface ElementTagNameMap {
+    'floating-header': HTMLFloatingHeaderElement;
     'my-component': HTMLMyComponentElement;
   }
 
