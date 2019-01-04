@@ -10,7 +10,7 @@ export class FloatingHeader {
 
   componentDidLoad() {
     var progressBar = this.element.shadowRoot.querySelector('progress');
-    var header = this.element;
+    var header = this.element.shadowRoot.querySelector('.floating-header');
     var title = this.element.shadowRoot.querySelector('.post-full-title');
     var lastScrollY = window.scrollY;
     var lastWindowHeight = window.innerHeight;
@@ -53,10 +53,20 @@ export class FloatingHeader {
   render() {
     return (
       <div>
-        <div class="post-full-title">PAPOIIIIIIII</div>
-        <progress id="file" max="100" value="70">
-          70%
-        </progress>
+        <div class="post-full-title" style={{ height: '1890px' }}>
+          LOL
+        </div>
+        <div class="floating-header">
+          <div class="floating-header-logo" />
+          <span class="floating-header-divider">&mdash;</span>
+          <div class="floating-header-title">LOL</div>
+
+          <progress class="progress" value="0">
+            <div class="progress-container">
+              <span class="progress-bar" />
+            </div>
+          </progress>
+        </div>
       </div>
     );
   }
