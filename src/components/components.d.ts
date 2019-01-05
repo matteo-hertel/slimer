@@ -16,7 +16,7 @@ export namespace Components {
     /**
     * The trigger treshold to activate the floating header
     */
-    'activeClass': string;
+    'activeClassName': string;
     /**
     * The trigger treshold to activate the floating header
     */
@@ -26,7 +26,7 @@ export namespace Components {
     /**
     * The trigger treshold to activate the floating header
     */
-    'activeClass'?: string;
+    'activeClassName'?: string;
     /**
     * The trigger treshold to activate the floating header
     */
