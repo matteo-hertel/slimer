@@ -12,8 +12,26 @@ import '@stencil/core';
 
 export namespace Components {
 
-  interface FloatingHeader {}
-  interface FloatingHeaderAttributes extends StencilHTMLAttributes {}
+  interface FloatingHeader {
+    /**
+    * The trigger treshold to activate the floating header
+    */
+    'activeClass': string;
+    /**
+    * The trigger treshold to activate the floating header
+    */
+    'triggerTreshold': number;
+  }
+  interface FloatingHeaderAttributes extends StencilHTMLAttributes {
+    /**
+    * The trigger treshold to activate the floating header
+    */
+    'activeClass'?: string;
+    /**
+    * The trigger treshold to activate the floating header
+    */
+    'triggerTreshold'?: number;
+  }
 
   interface MyComponent {
     /**

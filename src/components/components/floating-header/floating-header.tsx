@@ -1,4 +1,4 @@
-import { Component, Element } from '@stencil/core';
+import { Component, Element, Listen, Prop } from '@stencil/core';
 
 @Component({
   tag: 'floating-header',
@@ -7,47 +7,63 @@ import { Component, Element } from '@stencil/core';
 })
 export class FloatingHeader {
   @Element() private element: HTMLElement;
+  private header;
+  private lastDocumentHeight;
+  private lastScrollY;
+  private lastWindowHeight;
+  private progressBar;
+  private ticking = false;
+
+  /**
+   * The trigger treshold to activate the floating header
+   */
+  @Prop() triggerTreshold: number = 100;
+
+  /**
+   * The trigger treshold to activate the floating header
+   */
+  @Prop() activeClass: string = 'floating-active';
+
+  private requestTick() {
+    if (!this.ticking) {
+      requestAnimationFrame(this.update.bind(this));
+    }
+    this.ticking = true;
+  }
+
+  @Listen('window:scroll')
+  private onScroll(ev) {
+    this.lastScrollY = window.scrollY;
+    this.requestTick();
+  }
+  @Listen('window:resize')
+  private onResize(ev) {
+    this.lastWindowHeight = window.innerHeight;
+    this.lastDocumentHeight = document.documentElement.scrollHeight;
+    this.requestTick();
+  }
+
+  private update() {
+    if (this.lastScrollY >= this.triggerTreshold) {
+      this.header.classList.add(this.activeClass);
+    } else {
+      this.header.classList.remove(this.activeClass);
+    }
+    this.progressBar.setAttribute('value', String(this.lastScrollY));
+    this.ticking = false;
+  }
 
   componentDidLoad() {
-    var progressBar = this.element.shadowRoot.querySelector('progress');
-    var header = this.element.shadowRoot.querySelector('.floating-header');
-    var title = this.element.shadowRoot.querySelector('.post-full-title');
-    var lastScrollY = window.scrollY;
-    var lastWindowHeight = window.innerHeight;
-    var lastDocumentHeight = document.documentElement.scrollHeight;
-    var ticking = false;
-    function onScroll() {
-      lastScrollY = window.scrollY;
-      requestTick();
-    }
-    function onResize() {
-      lastWindowHeight = window.innerHeight;
-      lastDocumentHeight = document.documentElement.scrollHeight;
-      requestTick();
-    }
-    function requestTick() {
-      if (!ticking) {
-        requestAnimationFrame(update);
-      }
-      ticking = true;
-    }
-    function update() {
-      var trigger = title.getBoundingClientRect().top + window.scrollY;
-      var triggerOffset = 100 + 35;
-      var progressMax = lastDocumentHeight - lastWindowHeight;
-      // show/hide floating header
-      if (lastScrollY >= trigger + triggerOffset) {
-        header.classList.add('floating-active');
-      } else {
-        header.classList.remove('floating-active');
-      }
-      progressBar.setAttribute('max', String(progressMax));
-      progressBar.setAttribute('value', String(lastScrollY));
-      ticking = false;
-    }
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onResize, false);
-    update();
+    this.progressBar = this.element.shadowRoot.querySelector('progress');
+    this.header = this.element.shadowRoot.querySelector('.floating-header');
+
+    this.lastScrollY = window.scrollY;
+    this.lastWindowHeight = window.innerHeight;
+    this.lastDocumentHeight = document.documentElement.scrollHeight;
+    this.progressBar.setAttribute(
+      'max',
+      String(this.lastDocumentHeight - this.lastWindowHeight),
+    );
   }
 
   render() {
