@@ -33,7 +33,7 @@ export class FloatingHeader {
     this.requestTick(this.updateMax.bind(this, windowHeight, documentHeight));
   }
 
-  private requestTick(fn) {
+  private requestTick(fn: () => void) {
     if (!this.ticking) {
       requestAnimationFrame(fn);
     }
