@@ -68,9 +68,10 @@ export class FloatingHeader {
           [this.activeClassName]: this.isActive,
         }}
       >
-        <div class="floating-header-logo" />
-        <span class="floating-header-divider">&mdash;</span>
-        <div class="floating-header-title">LOL</div>
+        <slot name="logo" />
+        <slot name="divider" />
+        <slot name="title" />
+        <slot name="share" />
 
         <progress
           class="progress"
