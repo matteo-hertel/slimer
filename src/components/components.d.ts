@@ -32,46 +32,15 @@ export namespace Components {
     */
     'triggerTreshold'?: number;
   }
-
-  interface MyComponent {
-    /**
-    * The first name
-    */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
-  }
-  interface MyComponentAttributes extends StencilHTMLAttributes {
-    /**
-    * The first name
-    */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
-  }
 }
 
 declare global {
   interface StencilElementInterfaces {
     'FloatingHeader': Components.FloatingHeader;
-    'MyComponent': Components.MyComponent;
   }
 
   interface StencilIntrinsicElements {
     'floating-header': Components.FloatingHeaderAttributes;
-    'my-component': Components.MyComponentAttributes;
   }
 
 
@@ -81,20 +50,12 @@ declare global {
     new (): HTMLFloatingHeaderElement;
   };
 
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
-  };
-
   interface HTMLElementTagNameMap {
     'floating-header': HTMLFloatingHeaderElement
-    'my-component': HTMLMyComponentElement
   }
 
   interface ElementTagNameMap {
     'floating-header': HTMLFloatingHeaderElement;
-    'my-component': HTMLMyComponentElement;
   }
 
 

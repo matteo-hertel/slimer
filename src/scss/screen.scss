@@ -1567,28 +1567,6 @@ body {
 .read-next-card-footer a {
   color: #fff;
 }
-.floating-header {
-  visibility: hidden;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1000;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 60px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-  background: hsla(0, 0%, 100%, 0.95);
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  transform: translate3d(0, -120%, 0);
-}
-.floating-active {
-  visibility: visible;
-  transition: all 0.5s cubic-bezier(0.22, 1, 0.27, 1);
-  transform: translateZ(0);
-}
 .floating-header-logo {
   overflow: hidden;
   margin: 0 0 0 20px;
@@ -1690,48 +1668,7 @@ body {
 .floating-header-share-fb {
   background: #005e99;
 }
-.progress {
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  border: none;
-  color: #3eb0ef;
-  background: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.progress::-webkit-progress-bar {
-  background-color: transparent;
-}
-.progress::-webkit-progress-value {
-  background-color: #3eb0ef;
-}
-.progress::-moz-progress-bar {
-  background-color: #3eb0ef;
-}
-.progress-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: transparent;
-}
-.progress-bar {
-  display: block;
-  width: 50%;
-  height: inherit;
-  background-color: #3eb0ef;
-}
 @media (max-width: 900px) {
-  .floating-header {
-    height: 40px;
-  }
   .floating-header-logo,
   .floating-header-title {
     font-size: 1.5rem;
