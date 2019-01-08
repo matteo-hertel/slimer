@@ -19,7 +19,7 @@ export class FloatingHeader {
   /**
    * The trigger treshold to activate the floating header
    */
-  @Prop() activeClassName: string = 'floating-active';
+  @Prop() activeClassName: string = 'FloatingHeader--active';
 
   @Listen('window:scroll')
   private onScroll(ev) {
@@ -64,7 +64,7 @@ export class FloatingHeader {
     return (
       <div
         class={{
-          'floating-header': true,
+          FloatingHeader: true,
           [this.activeClassName]: this.isActive,
         }}
       >
@@ -77,11 +77,7 @@ export class FloatingHeader {
           class="progress"
           value="0"
           ref={el => (this.progressBar = el as HTMLElement)}
-        >
-          <div class="progress-container">
-            <span class="progress-bar" />
-          </div>
-        </progress>
+        />
       </div>
     );
   }
