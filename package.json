@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Slimer theme for hugo",
   "engines": {
-    "node": "10.13.0",
+    "node": "10.15.0",
     "npm": "6.4.1"
   },
   "main": "src/index.js",
