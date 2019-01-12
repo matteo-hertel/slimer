@@ -12,8 +12,7 @@
   "module": "build/components/esm/es5/index.js",
   "scripts": {
     "build": "rm -rf ./dist/ && webpack --mode production --config webpack.prod.config.js",
-    "clean": "rm -rf dist build dist .stencil",
-    "storybook": "start-storybook -p 9001 -c .storybook",
+    "clean": "rm -rf dist build .stencil node_modules",
     "components:build": "stencil build --docs",
     "components:start": "stencil build --dev --watch --serve",
     "components:test": "stencil test --spec --e2e",
@@ -28,6 +27,7 @@
     "preinstall": "npx Skyscanner/ensure-node-env",
     "prettier": "prettier --config .prettierrc --write \"**/*.{js,jsx}\"",
     "start:hugo": "hugo -d ../dist -s site -vw",
+    "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
