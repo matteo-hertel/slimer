@@ -10,7 +10,8 @@ The different script allow to work on specific part in isolation for easier deve
 ## Installation
 
 To run the whole thing locally a few bits are needed:
-- [node and npm](https://github.com/creationix/nvm) 
+
+- [node and npm](https://github.com/creationix/nvm)
 - [hugo](https://gohugo.io/)
 
 To run the site open two terminals/pane/split and run in one
@@ -22,12 +23,13 @@ npm run start:hugo
 and in the other one
 
 ```sh
-npm run dev 
+npm run dev
 ```
 
 the whole theme with fake content and hot-reloading will be available at [ http://localhost:3000 ](http://localhost:3000)
 
 To run the webcomponents stack open two terminals/pane/split and run in one
+
 ```sh
 npm run components:start
 ```
@@ -35,7 +37,7 @@ npm run components:start
 and in the other one
 
 ```sh
-npm run storybook 
+npm run storybook
 ```
 
 The storybook app will be running at [http://localhost:9001](http://localhost:9001), it'll autoload all the files called `stories.js` in all the different components.
@@ -44,5 +46,18 @@ The storybook app will be running at [http://localhost:9001](http://localhost:90
 
 For now tests are only available for web componentes as they are the only place with some logic, once the theme is completed visual tests will be added for the critical paths.
 
-## License 
+## Other Credits
+
+Some of the default pictures are from [https://unsplash.com](Unsplash):
+
+- Photo by [https://unsplash.com/photos/C-lAD9Xizbg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText](Tim Gouw) on [https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText](Unsplash).
+- Photo by [https://unsplash.com/photos/y8iR4t4MTF8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText](Julian Zett) on [https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText](Unsplash).
+- Photo by (https://unsplash.com/photos/phIFdC6lA4E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)[Benjamin Voros] on (https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)[Unsplash].
+- Photo by (https://unsplash.com/photos/Sa7787z58VQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)[Marco Bonomo] on (https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)[Unsplash].
+- Photo by (https://unsplash.com/photos/cFplR9ZGnAk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)[Alberto Restifo] on (https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)[Unsplash].
+- Photo by [https://unsplash.com/photos/Bkci_8qcdvQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText](Kalen Emsley) on [https://unsplash.com/search/photos/mountains?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText](Unsplash).
+- One of the pictures is the view outside my house in northen Italy 😄.
+
+## License
+
 This repo in licensed un the [MIT](./LICENSE) license, so is [Casper](https://github.com/TryGhost/Casper/blob/master/LICENSE) and [hugo-casper-two](https://github.com/eueung/hugo-casper-two/blob/master/LICENSE.md).
