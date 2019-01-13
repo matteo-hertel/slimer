@@ -32,15 +32,40 @@ export namespace Components {
     */
     'triggerTreshold'?: number;
   }
+
+  interface GitEdit {
+    /**
+    * The file path in the repo
+    */
+    'filePath': string;
+    'large': boolean;
+    /**
+    * The repo base url
+    */
+    'repo': string;
+  }
+  interface GitEditAttributes extends StencilHTMLAttributes {
+    /**
+    * The file path in the repo
+    */
+    'filePath'?: string;
+    'large'?: boolean;
+    /**
+    * The repo base url
+    */
+    'repo'?: string;
+  }
 }
 
 declare global {
   interface StencilElementInterfaces {
     'FloatingHeader': Components.FloatingHeader;
+    'GitEdit': Components.GitEdit;
   }
 
   interface StencilIntrinsicElements {
     'floating-header': Components.FloatingHeaderAttributes;
+    'git-edit': Components.GitEditAttributes;
   }
 
 
@@ -50,12 +75,20 @@ declare global {
     new (): HTMLFloatingHeaderElement;
   };
 
+  interface HTMLGitEditElement extends Components.GitEdit, HTMLStencilElement {}
+  var HTMLGitEditElement: {
+    prototype: HTMLGitEditElement;
+    new (): HTMLGitEditElement;
+  };
+
   interface HTMLElementTagNameMap {
     'floating-header': HTMLFloatingHeaderElement
+    'git-edit': HTMLGitEditElement
   }
 
   interface ElementTagNameMap {
     'floating-header': HTMLFloatingHeaderElement;
+    'git-edit': HTMLGitEditElement;
   }
 
 

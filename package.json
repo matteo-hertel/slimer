@@ -12,7 +12,7 @@
   "module": "build/components/esm/es5/index.js",
   "scripts": {
     "build": "rm -rf ./dist/ && webpack --mode production --config webpack.prod.config.js",
-    "clean": "rm -rf dist build .stencil node_modules",
+    "clean": "rm -rf dist build .stencil node_modules site/public",
     "components:build": "stencil build --docs",
     "components:start": "stencil build --dev --watch --serve",
     "components:test": "stencil test --spec --e2e",

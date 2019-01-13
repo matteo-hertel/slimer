@@ -64,3 +64,4 @@ generated
 dist/
 site/data/webpack.json
 build
+site/public

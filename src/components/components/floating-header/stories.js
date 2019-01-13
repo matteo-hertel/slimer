@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/html';
-console.log(storiesOf);
+
 storiesOf('Floating Header', module)
   .add(
     'default',
