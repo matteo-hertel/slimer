@@ -23,15 +23,15 @@ canonifyurls    = true
   linkedinName = "hertelmatteo"
   mediumName = ""
 
-  logo = "hugo-logo.png"
+  logo = "logo/animated_logo.svg"
   orgName = "MH"
   orgWebsite = ""
   orgDescription = "Here is a description placeholder for your org"
 
   showSupport = true
 
-  author = "EM"
-  authorAvatar = "img/ghost-icon.png"
+  author = "MH"
+  authorAvatar = "https://res.cloudinary.com/demo/image/gravatar/w_150/53d2fe0924a9b4e167e21ef356e09e89.jpg"
   authorLocation = "London, UK"
   authorWebsite = "https://matteohertel.com"
   authorDescription = "Your description here"

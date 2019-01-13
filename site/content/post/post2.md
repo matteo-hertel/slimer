@@ -3,7 +3,6 @@ author: "Test Author"
 date: 2018-12-2
 linktitle: Awesomeness
 title: Post n# 2
-authorAvatar: hugo-logo.png
 tags : [
     "go",
     "golang",
