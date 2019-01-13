@@ -16,6 +16,6 @@ storiesOf('Git Edit', module)
   .add(
     'Custom Repo and File Path',
     () => `
-  <git-edit repo='http://github.com/matteo-hertel/slimer/blob/master' file-path='src/componets/git-edit/stories.js'></git>
+  <git-edit repo='http://github.com/matteo-hertel/slimer/blob/master' file-path='src/components/components/git-edit/stories.js'></git>
     `,
   );

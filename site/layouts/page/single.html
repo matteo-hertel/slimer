@@ -13,6 +13,10 @@
           </header>
 
           <section class="post-full-content">
+      <div class='Post__metadata'>  
+      <span>{{.ReadingTime}} min(s) to read</span>
+        <git-edit large file-path='{{ .File.Dir}}{{.File.LogicalName}}'></git-edit>
+      </div>
             <div class="kg-card-markdown">
               {{ .Content }}    
             </div>

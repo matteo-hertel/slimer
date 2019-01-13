@@ -776,6 +776,8 @@ body {
   font-family: Georgia, serif;
 }
 .post-card-meta {
+  display: flex;
+  justify-content: space-between;
   padding: 0 25px 25px;
 }
 .author-profile-image {
@@ -787,6 +789,15 @@ body {
 }
 .post-card-author {
   font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.reading-time {
+  margin-left: 20px;
+  color: #738a94;
+  font-size: 1.2rem;
+  line-height: 33px;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;

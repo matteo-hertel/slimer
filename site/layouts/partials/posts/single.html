@@ -5,6 +5,7 @@
                 <span class="date-divider">/</span> {{ range $index, $tag := .Params.tags }}{{if lt $index 2}}<a href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}/">#{{$tag}}</a>&nbsp;{{end}}{{end}}{{ end }}
         </section>
         <h1 class="post-full-title">{{.Title}}</h1>
+
     </header>
     {{if .Params.image}}
     <figure class="post-full-image" style="background-image: url({{.Params.image | absURL}})">
@@ -13,8 +14,11 @@
     </figure>{{end}}
 
     <section class="post-full-content">
+      <div class='Post__metadata'>  
+      <span>{{.ReadingTime}} min(s) to read</span>
+        <git-edit large file-path='{{ .File.Dir}}{{.File.LogicalName}}'></git-edit>
+      </div>
         <div class="kg-card-markdown">
-          {{ .File.Dir}}{{.File.LogicalName}}
         {{ .Content }}    
         </div>
     </section>
