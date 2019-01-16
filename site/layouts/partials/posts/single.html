@@ -13,33 +13,26 @@
     <figure class="post-full-image" style="background-image: url(https://res.cloudinary.com/mhdev/image/upload/c_scale,r_0,w_1200/v1547330791/blog/defaultImages/covers/{{ index (seq 8 | shuffle) 0 }}.jpg)">
     </figure>{{end}}
 
-    <section class="post-full-content">
-      <div class='Post__metadata'>  
-      <section class="author-card">
-        <img class="author-profile-image" src="https://res.cloudinary.com/demo/image/gravatar/w_80/{{md5 .GitInfo.AuthorEmail}}.jpg" alt="Author" />
-        <section class="author-card-content">
-            <h4 class="author-card-name">{{.GitInfo.AuthorName}}</h4>
-        </section>
-      </section>
+      <div class='PostMetadata'>  
+        <img class="PostMetadata__profileImage" src="https://res.cloudinary.com/demo/image/gravatar/w_80/{{md5 .GitInfo.AuthorEmail}}.jpg" alt="Gravatar Picture for {{.GitInfo.AuthorName}}" />
+        <div class="PostMetadata__author">
+          <span class="PostMetadata__author--prefix">Author</span>
+          <p>{{.GitInfo.AuthorName}}</p>
+        </div>
+      <div class="PostMetadata__timeToRead">
+          <span class="PostMetadata__timeToRead--prefix">TTR</span>
 
       <span>{{.ReadingTime}} min(s) to read</span>
-      <span><time class="post-full-meta-date" datetime="{{.Date.Format "2006-01-02"}}">{{ .Lastmod.Format "2 January 2006" | safeHTML }}</time></span>
-
-      <git-edit large file-path='{{ .File.Dir}}{{.File.LogicalName}}'></git-edit>
-
       </div>
+      <div class="PostMetadata__lastUpdated">
+          <span class="PostMetadata__lastUpdated--prefix">Last Updated</span>
+      <span><time datetime="{{.Date.Format "2006-01-02"}}">{{ .Lastmod.Format "2 January 2006" | safeHTML }}</time></span>
+</div>
+      <git-edit large file-path='{{ .File.Dir}}{{.File.LogicalName}}'></git-edit>
+      </div>
+    <section class="post-full-content">
         <div class="kg-card-markdown">
         {{ .Content }}    
         </div>
     </section>
-
-
-    <footer class="post-full-footer">
-      <section class="author-card">
-        <img class="author-profile-image" src="https://res.cloudinary.com/demo/image/gravatar/w_80/{{md5 .GitInfo.AuthorEmail}}.jpg" alt="Author" />
-        <section class="author-card-content">
-            <h4 class="author-card-name">{{.GitInfo.AuthorName}}</h4>
-        </section>
-      </section>
-    </footer>
 </article>

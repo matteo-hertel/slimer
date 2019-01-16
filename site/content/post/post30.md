@@ -2,7 +2,7 @@
 author: "Test Author"
 date: 2018-12-30
 linktitle: Awesomeness
-title: Post n# 30
+title: How about this for a title? 
 tags : [
     "go",
     "golang",

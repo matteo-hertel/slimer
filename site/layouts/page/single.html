@@ -11,11 +11,26 @@
           <header class="post-full-header">
             <h1 class="post-full-title">{{.Title | title}}</h1>
           </header>
+      <div class='PageMetadata'>  
+        <img class="PageMetadata__profileImage" src="https://res.cloudinary.com/demo/image/gravatar/w_80/{{md5 .GitInfo.AuthorEmail}}.jpg" alt="Gravatar Picture for {{.GitInfo.AuthorName}}" />
+        <div class="PageMetadata__author">
+          <span class="PageMetadata__author--prefix">Author</span>
+          <p>{{.GitInfo.AuthorName}}</p>
+        </div>
+      <div class="PageMetadata__timeToRead">
+          <span class="PageMetadata__timeToRead--prefix">TTR</span>
+
+      <span>{{.ReadingTime}} min(s) to read</span>
+      </div>
+      <div class="PageMetadata__lastUpdated">
+          <span class="PageMetadata__lastUpdated--prefix">Last Updated</span>
+      <span><time datetime="{{.Date.Format "2006-01-02"}}">{{ .Lastmod.Format "2 January 2006" | safeHTML }}</time></span>
+</div>
+      <git-edit large file-path='{{ .File.Dir}}{{.File.LogicalName}}'></git-edit>
+      </div>
 
           <section class="post-full-content">
-      <div class='Post__metadata'>  
-      <span>{{.ReadingTime}} min(s) to read</span>
-        <git-edit large file-path='{{ .File.Dir}}{{.File.LogicalName}}'></git-edit>
+      <div class='Page__metadata'>  
       </div>
             <div class="kg-card-markdown">
               {{ .Content }}    
