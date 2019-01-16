@@ -15,20 +15,30 @@
 
     <section class="post-full-content">
       <div class='Post__metadata'>  
+      <section class="author-card">
+        <img class="author-profile-image" src="https://res.cloudinary.com/demo/image/gravatar/w_80/{{md5 .GitInfo.AuthorEmail}}.jpg" alt="Author" />
+        <section class="author-card-content">
+            <h4 class="author-card-name">{{.GitInfo.AuthorName}}</h4>
+        </section>
+      </section>
+
       <span>{{.ReadingTime}} min(s) to read</span>
-        <git-edit large file-path='{{ .File.Dir}}{{.File.LogicalName}}'></git-edit>
+      <span><time class="post-full-meta-date" datetime="{{.Date.Format "2006-01-02"}}">{{ .Lastmod.Format "2 January 2006" | safeHTML }}</time></span>
+
+      <git-edit large file-path='{{ .File.Dir}}{{.File.LogicalName}}'></git-edit>
+
       </div>
         <div class="kg-card-markdown">
         {{ .Content }}    
         </div>
     </section>
 
+
     <footer class="post-full-footer">
       <section class="author-card">
-        <img class="author-profile-image" src="{{ (.Params.authorAvatar | default .Site.Params.authorAvatar) | absURL}}" alt="Author" />
+        <img class="author-profile-image" src="https://res.cloudinary.com/demo/image/gravatar/w_80/{{md5 .GitInfo.AuthorEmail}}.jpg" alt="Author" />
         <section class="author-card-content">
-            <h4 class="author-card-name"><a href="{{"/" | absURL}}">{{.Params.author | default .Site.Params.author}}</a></h4>
-                <p>{{.Params.authorDescription | default .Site.Params.authorDescription}}</p>
+            <h4 class="author-card-name">{{.GitInfo.AuthorName}}</h4>
         </section>
       </section>
     </footer>
