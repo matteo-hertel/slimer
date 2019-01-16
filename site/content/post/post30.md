@@ -56,7 +56,7 @@ $
 
 ## Some Definitions
 
-There are a few concepts that you need to understand before creating a theme.
+There are a few concepts that you should understand before creating a theme.
 
 ### Skins
 
