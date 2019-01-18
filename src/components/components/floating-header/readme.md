@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property          | Attribute           | Description                                          | Type     |
-| ----------------- | ------------------- | ---------------------------------------------------- | -------- |
-| `activeClassName` | `active-class-name` | The trigger treshold to activate the floating header | `string` |
-| `triggerTreshold` | `trigger-treshold`  | The trigger treshold to activate the floating header | `number` |
+| Property          | Attribute           | Description                                          | Type     | Default                    |
+| ----------------- | ------------------- | ---------------------------------------------------- | -------- | -------------------------- |
+| `activeClassName` | `active-class-name` | The trigger treshold to activate the floating header | `string` | `'FloatingHeader--active'` |
+| `triggerTreshold` | `trigger-treshold`  | The trigger treshold to activate the floating header | `number` | `100`                      |
 
 
 ----------------------------------------------
