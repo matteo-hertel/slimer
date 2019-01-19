@@ -1,4 +1,6 @@
 <meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="author" content="{{ .Site.Params.author }}" />
+<meta property="author" content="{{ .Site.Params.author }}" />
     <meta property="og:title" content="{{ if ne .URL "/" }}{{ .Title }} &middot; {{ end }}{{ .Site.Params.Title }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     {{if .Site.Params.fbName}}<meta property="article:publisher" content="https://www.facebook.com/{{.Site.Params.fbName}}" />{{end}}
