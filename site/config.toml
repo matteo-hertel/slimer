@@ -4,18 +4,20 @@ disqusShortname = ""
 paginate        = 7
 #SectionPagesMenu = "main"
 canonifyurls    = true
+title       = "MountainDev"
 [params]
   title       = "MountainDev"
   subtitle    = "I write typos and sometimes code by mistake"
   copyright   = "© 2018"
 
-  description = "Matteo Hertel's blog, will talk about latest technology and general fullstack tutorials"
-  metaDescription = "Matteo Hertel's blog, will talk about latest technology and general fullstack tutorials"
+  description = "Matteo Hertel's blog, will talk about latest technologies, general fullstack tutorials and much more"
+  metaDescription = "Matteo Hertel's blog, will talk about latest technologies, general fullstack tutorials and much more"
+  cover = "https://res.cloudinary.com/demo/image/gravatar/d_identicon,w_250/53d2fe0924a9b4e167e21ef356e09e89.jpg"
   googleAnalytics = ""
   customCSS = []
   RSSLink = ""
 
-  twitterName = "@MHDev91"
+  twitterName = "MHDev91"
   githubName = "matteo-hertel"
   linkedinName = "hertelmatteo"
   mediumName = ""
