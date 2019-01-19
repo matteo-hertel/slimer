@@ -4,7 +4,6 @@ disqusShortname = ""
 paginate        = 7
 #SectionPagesMenu = "main"
 canonifyurls    = true
-enableGitInfo   = true
 [params]
   title       = "MountainDev"
   subtitle    = "I write typos and sometimes code by mistake"
