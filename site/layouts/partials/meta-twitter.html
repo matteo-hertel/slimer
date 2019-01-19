@@ -1,5 +1,5 @@
-{{ if .IsPage }} <!-- Credit V JEANTET -->
-    {{ with .Params.image }}
+{{ if .IsPage }}
+{{ with .Params.image }}
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:image" content="{{ .  | absURL }}"/>
     {{ else }}
