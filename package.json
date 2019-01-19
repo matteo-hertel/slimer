@@ -9,7 +9,7 @@
   },
   "main": "src/index.js",
   "collection": "build/components/collection/collection-manifest.json",
-  "types": "build/components/types/components.d.ts",
+  "types": "src/components/types/components.d.ts",
   "module": "build/components/esm/es5/index.js",
   "scripts": {
     "build": "rm -rf ./dist/ && webpack --mode production --config webpack.prod.config.js",
