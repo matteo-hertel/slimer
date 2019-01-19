@@ -12,7 +12,7 @@ title       = "MountainDev"
 
   description = "Matteo Hertel's blog, will talk about latest technology and general fullstack tutorials"
   metaDescription = "Matteo Hertel's blog, will talk about latest technology and general fullstack tutorials"
-  cover = "https://res.cloudinary.com/demo/image/gravatar/d_identicon,w_150/53d2fe0924a9b4e167e21ef356e09e89.jpg"
+  cover = "https://res.cloudinary.com/demo/image/gravatar/d_identicon,w_250/53d2fe0924a9b4e167e21ef356e09e89.jpg"
   googleAnalytics = ""
   customCSS = []
   RSSLink = ""
