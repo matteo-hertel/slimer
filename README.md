@@ -48,14 +48,15 @@ For now tests are only available for web componentes as they are the only place 
 
 ## Other Credits
 
-Some of the default pictures are from [https://unsplash.com](Unsplash):
+Some of the default pictures are from [Unsplash](https://unsplash.com):
 
-- Photo by [https://unsplash.com/photos/C-lAD9Xizbg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText](Tim Gouw) on [https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText](Unsplash).
-- Photo by [https://unsplash.com/photos/y8iR4t4MTF8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText](Julian Zett) on [https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText](Unsplash).
-- Photo by (https://unsplash.com/photos/phIFdC6lA4E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)[Benjamin Voros] on (https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)[Unsplash].
-- Photo by (https://unsplash.com/photos/Sa7787z58VQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)[Marco Bonomo] on (https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)[Unsplash].
-- Photo by (https://unsplash.com/photos/cFplR9ZGnAk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)[Alberto Restifo] on (https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)[Unsplash].
-- Photo by [https://unsplash.com/photos/Bkci_8qcdvQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText](Kalen Emsley) on [https://unsplash.com/search/photos/mountains?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText](Unsplash).
+- Photo by 
+[TimGouw](https://unsplash.com/photos/C-lAD9Xizbg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+- Photo by [Julian Zett](https://unsplash.com/photos/y8iR4t4MTF8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+- Photo by [Benjamin Voros](https://unsplash.com/photos/phIFdC6lA4E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+- Photo by [Marco Bonomo](https://unsplash.com/photos/Sa7787z58VQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+- Photo by [Alberto Restifo](https://unsplash.com/photos/cFplR9ZGnAk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+- Photo by [Kalen Emsley](https://unsplash.com/photos/Bkci_8qcdvQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/mountains?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText]).
 - One of the pictures is the view outside my house in northen Italy 😄.
 
 ## License
