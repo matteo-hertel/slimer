@@ -6,27 +6,24 @@ paginate        = 7
 canonifyurls    = true
 enableGitInfo   = true
 [params]
-  title       = "Slimer"
-  subtitle    = ""
+  title       = "MountainDev"
+  subtitle    = "I write typos and sometimes code by mistake"
   copyright   = "© 2018"
 
-  cover       = "img/blog-cover.jpg"
-  description = "Here is a description of your site."
-  metaDescription = ""
+  description = "Matteo Hertel's blog, will talk about latest technology and general fullstack tutorials"
+  metaDescription = "Matteo Hertel's blog, will talk about latest technology and general fullstack tutorials"
   googleAnalytics = ""
   customCSS = []
   RSSLink = ""
 
-  twitterName = "faketryghost"
-  fbName = "fakeghost"
+  twitterName = "@MHDev91"
   githubName = "matteo-hertel"
   linkedinName = "hertelmatteo"
   mediumName = ""
 
   logo = "logo/animated_logo.svg"
   orgName = "MH"
-  orgWebsite = ""
-  orgDescription = "Here is a description placeholder for your org"
+  orgWebsite = "https://matteohertel.com"
 
   showSupport = true
 
@@ -34,9 +31,9 @@ enableGitInfo   = true
   authorAvatar = "https://res.cloudinary.com/demo/image/gravatar/d_identicon,w_150/53d2fe0924a9b4e167e21ef356e09e89.jpg"
   authorLocation = "London, UK"
   authorWebsite = "https://matteohertel.com"
-  authorDescription = "Your description here"
+  authorDescription = "I write typos and sometimes code by mistake"
 
-  pageNotFoundTitle = "404 - Page not found"
+  pageNotFoundTitle = "404 - Move along, nothing to see here"
 
 [permalinks]
   post = "/post/:slug/"
@@ -47,18 +44,11 @@ enableGitInfo   = true
   weight = 200
 
 [[menu.main]]
-  name = "Go"
-  url = "/tags/golang/"
+  name = "Tags"
+  url = "/tags"
   weight = 100
 
 [[menu.main]]
   name = "Categories"
   url = "/categories/"
   weight = 99
-
-[[menu.main]]
-  name = "External"
-  url = "https://google.com/"
-  weight = 95
-
-

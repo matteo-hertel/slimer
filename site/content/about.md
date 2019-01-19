@@ -6,8 +6,6 @@ noauthor = true
 share = false
 title = "About me"
 type = "page"
-[menu.main]
-weight = 111
 
 +++
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
