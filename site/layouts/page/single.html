@@ -12,10 +12,10 @@
             <h1 class="post-full-title">{{.Title | title}}</h1>
           </header>
       <div class='PageMetadata'>  
-        <img class="PageMetadata__profileImage" src="https://res.cloudinary.com/demo/image/gravatar/w_80/{{md5 .GitInfo.AuthorEmail}}.jpg" alt="Gravatar Picture for {{.GitInfo.AuthorName}}" />
+        <img class="PageMetadata__profileImage" src="{{.Site.Params.authorAvatar}}" alt="Gravatar Picture for {{.Site.Params.author}}" />
         <div class="PageMetadata__author">
           <span class="PageMetadata__author--prefix">Author</span>
-          <p>{{.GitInfo.AuthorName}}</p>
+          <p>{{.Site.Params.author}}</p>
         </div>
       <div class="PageMetadata__timeToRead">
           <span class="PageMetadata__timeToRead--prefix">TTR</span>

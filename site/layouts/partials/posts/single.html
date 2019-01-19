@@ -13,10 +13,10 @@
     <figure class="post-full-image" style="background-image: url(https://res.cloudinary.com/mhdev/image/upload/c_scale,r_0,w_1200/v1547330791/blog/defaultImages/covers/{{ index (seq 8 | shuffle) 0 }}.jpg)">
     </figure>{{end}}
       <div class='PostMetadata'>  
-        <img class="PostMetadata__profileImage" src="https://res.cloudinary.com/demo/image/gravatar/d_identicon,w_80/{{md5 .GitInfo.AuthorEmail}}.jpg" alt="Gravatar Picture for {{.GitInfo.AuthorName}}" />
+        <img class="PostMetadata__profileImage" src="{{.Site.Params.authorAvatar}}" alt="Gravatar Picture for {{.Site.Params.author}}" />
         <div class="PostMetadata__author">
-          <span class="PostMetadata__author--prefix">Last updated by</span>
-          <p>{{.GitInfo.AuthorName}}</p>
+          <span class="PostMetadata__author--prefix">Author</span>
+          <p>{{.Site.Params.author}}</p>
         </div>
       <div class="PostMetadata__lastUpdated">
           <span class="PostMetadata__lastUpdated--prefix">Last Updated</span>
