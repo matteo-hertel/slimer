@@ -21,7 +21,7 @@
     "dev": "webpack-dev-server --mode development --config webpack.dev.config.js",
     "lint:js": "eslint . --ext js,jsx",
     "lint:js:fix": "eslint . --ext js,jsx --fix",
-    "postbuild": "hugo -d ../dist -s site --minify",
+    "postbuild": "hugo  --minify -d ../dist -s site",
     "prebuild": "npm run components:build",
     "precomponents:build": "rm -rf build/components",
     "predev": "npm run components:build",
