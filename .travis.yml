@@ -1,7 +1,9 @@
 language: node_js
 
 before_script:
-  - curl -L https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_extended_0.53_Linux-64bit.tar.gz | tar -xvz -C /usr/bin 
+  - curl -L https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_extended_0.53_Linux-64bit.tar.gz | tar -xvz -C ./.hugo
+  - export PATH="$(pwd)/.hugo:$PATH"
+  - hugo version
 
 script: npm run components:test
 
