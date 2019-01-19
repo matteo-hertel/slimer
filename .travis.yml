@@ -1,0 +1,14 @@
+language: node_js
+
+before_script:
+  - curl -L https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_extended_0.53_Linux-64bit.tar.gz | tar -xvz -C /usr/bin 
+
+script: npm run components:test
+
+after_success: 
+ - npm run build
+ - ls -la dist 
+
+cache: npm
+
+
