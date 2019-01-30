@@ -10,7 +10,7 @@
     {{if .Params.image}}
     <figure class="post-full-image" style="background-image: url({{.Params.image | absURL}})">
     </figure>{{else}}
-    <figure class="post-full-image" style="background-image: url(https://res.cloudinary.com/mhdev/image/upload/c_scale,r_0,w_1200/v1547330791/blog/defaultImages/covers/{{ index (seq 8 | shuffle) 0 }}.jpg)">
+    <figure class="post-full-image" style="background-image: url(https://res.cloudinary.com/mhdev/image/upload/f_auto,q_auto,w_900/v1547330791/blog/defaultImages/covers/{{ index (seq 8 | shuffle) 0 }}.jpg)">
     </figure>{{end}}
       <div class='PostMetadata'>  
         <img class="PostMetadata__profileImage" src="{{.Site.Params.authorAvatar}}" alt="Gravatar Picture for {{.Site.Params.author}}" />
