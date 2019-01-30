@@ -12,7 +12,7 @@ title       = "MountainDev"
 
   description = "Matteo Hertel's blog, will talk about latest technologies, general fullstack tutorials and much more"
   metaDescription = "Matteo Hertel's blog, will talk about latest technologies, general fullstack tutorials and much more"
-  cover = "https://res.cloudinary.com/demo/image/gravatar/d_identicon,w_250/53d2fe0924a9b4e167e21ef356e09e89.jpg"
+  cover = "https://res.cloudinary.com/demo/image/gravatar/d_identicon,w_250,f_auto,q_auto/53d2fe0924a9b4e167e21ef356e09e89.jpg"
   googleAnalytics = ""
   customCSS = []
   RSSLink = ""
@@ -29,7 +29,7 @@ title       = "MountainDev"
   showSupport = true
 
   author = "Matteo Hertel"
-  authorAvatar = "https://res.cloudinary.com/demo/image/gravatar/d_identicon,w_150/53d2fe0924a9b4e167e21ef356e09e89.jpg"
+  authorAvatar = "https://res.cloudinary.com/demo/image/gravatar/d_identicon,w_150,f_auto,q_auto/53d2fe0924a9b4e167e21ef356e09e89.jpg"
   authorLocation = "London, UK"
   authorWebsite = "https://matteohertel.com"
   authorDescription = "I write typos and sometimes code by mistake"
