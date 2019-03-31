@@ -29,7 +29,7 @@
     "prettier": "prettier --config .prettierrc --write \"**/*.{js,jsx}\"",
     "start:hugo": "hugo -d ../dist -s site -vw",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "generate:headers": "node scripts/headers.js > dist/_headers"
+    "generate:headers": "node scripts/generateHeaders.js > dist/_headers"
   },
   "keywords": [],
   "author": "Matteo Hertel <info@matteohertel.com>",
