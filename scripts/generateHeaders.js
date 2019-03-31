@@ -3,22 +3,22 @@ const headerTypeMap = new Map([
   [
     'js',
     {
-      rel: 'preload',
-      as: 'script',
+      rel: '"preload"',
+      as: '"script"',
     },
   ],
   [
     'css',
     {
-      rel: 'preload',
-      as: 'style',
+      rel: '"preload"',
+      as: '"style"',
     },
   ],
   [
     'img',
     {
-      rel: 'preload',
-      as: 'image',
+      rel: '"preload"',
+      as: '"image"',
     },
   ],
 ]);
