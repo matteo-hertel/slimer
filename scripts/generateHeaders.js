@@ -30,7 +30,7 @@ const globlaHeaders = [
   ['X-Frame-Options', 'DENY'],
   ['X-Content-Type-Options', 'nosniff'],
   ['Referrer-Policy', 'strict-origin-when-cross-origin'],
-  ['Strict-Transport-Security', 'max-age=31536000; includeSubDomains'],
+  ['Strict-Transport-Security', "max-age='31536000'; includeSubDomains"],
   ['Feature-Policy', "sync-xhr 'self'; push 'self'; fullscreen 'self'"],
 ];
 
