@@ -60,10 +60,12 @@ function createHeaderString(headers) {
     return `${acc}${padString(`${key}:${value}`)}\n`;
   }
 }
+
 function makeLinkHeader(type, file) {
   if (!headerTypeMap.has(type)) {
     throw new Error('Unrecognised type');
   }
+
   const headerInfo = headerTypeMap.get(type);
   return ['Link', `</${file}>; rel=${headerInfo.rel}; as=${headerInfo.as}`];
 }

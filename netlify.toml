@@ -1,0 +1,7 @@
+[Settings]
+ID = "3a7d3501-66fd-4791-a145-51fef54efb98"
+[build]
+  base = "/"
+  publish = "/dist"
+  command = "make prod"
+
