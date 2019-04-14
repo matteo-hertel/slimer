@@ -42,7 +42,7 @@ function main() {
 
   console.log(
     `
-/*
+/
 ${headers}
 `,
   );
