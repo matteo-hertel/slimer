@@ -2,9 +2,11 @@ baseurl         = "/"
 languageCode    = "en-GB"
 disqusShortname = ""
 paginate        = 7
-#SectionPagesMenu = "main"
+
 canonifyurls    = true
 title       = "MountainDev"
+enableRobotsTXT= true
+
 [params]
   title       = "MountainDev"
   subtitle    = "I write typos and sometimes code by mistake"
