@@ -4,8 +4,8 @@
   "description": "Slimer theme for hugo",
   "repository": "https://github.com/matteo-hertel/slimer",
   "engines": {
-    "node": "^10.15.0",
-    "npm": "6.4.1"
+    "node": "^10.16.0",
+    "npm": "^6.9.0"
   },
   "main": "src/index.js",
   "collection": "build/components/collection/collection-manifest.json",
