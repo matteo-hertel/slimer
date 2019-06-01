@@ -10,7 +10,7 @@ enableRobotsTXT= true
 [params]
   title       = "MountainDev"
   subtitle    = "I write typos and sometimes code by mistake"
-  copyright   = "© 2018"
+  copyright   = "© 2019"
 
   description = "Matteo Hertel's blog, will talk about latest technologies, general fullstack tutorials and much more"
   metaDescription = "Matteo Hertel's blog, will talk about latest technologies, general fullstack tutorials and much more"
