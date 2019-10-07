@@ -1,11 +1,11 @@
-import { Component, Listen, Prop, State } from '@stencil/core';
+import { Component, Listen, Prop, State, h } from '@stencil/core';
 
 @Component({
   tag: 'git-edit',
   styleUrl: 'git-edit.css',
   shadow: true,
 })
-class GitEdit {
+export class GitEdit {
   /**
    * The repo base url
    */
@@ -50,4 +50,3 @@ class GitEdit {
     );
   }
 }
-export GitEdit

@@ -1,11 +1,11 @@
-import { Component, Listen, Prop, State } from '@stencil/core';
+import { Component, Listen, Prop, State, h } from '@stencil/core';
 
-export @Component({
+@Component({
   tag: 'floating-header',
   styleUrl: 'floating-header.css',
   shadow: true,
 })
-class FloatingHeader {
+export class FloatingHeader {
   progressBar!: HTMLElement;
 
   private ticking = false;
