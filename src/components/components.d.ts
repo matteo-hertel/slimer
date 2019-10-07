@@ -5,13 +5,10 @@
  */
 
 
-import './stencil.core';
-
-
+import { HTMLStencilElement, JSXBase } from './stencil.core';
 
 
 export namespace Components {
-
   interface FloatingHeader {
     /**
     * The trigger treshold to activate the floating header
@@ -22,17 +19,6 @@ export namespace Components {
     */
     'triggerTreshold': number;
   }
-  interface FloatingHeaderAttributes extends StencilHTMLAttributes {
-    /**
-    * The trigger treshold to activate the floating header
-    */
-    'activeClassName'?: string;
-    /**
-    * The trigger treshold to activate the floating header
-    */
-    'triggerTreshold'?: number;
-  }
-
   interface GitEdit {
     /**
     * The file path in the repo
@@ -44,29 +30,9 @@ export namespace Components {
     */
     'repo': string;
   }
-  interface GitEditAttributes extends StencilHTMLAttributes {
-    /**
-    * The file path in the repo
-    */
-    'filePath'?: string;
-    'large'?: boolean;
-    /**
-    * The repo base url
-    */
-    'repo'?: string;
-  }
 }
 
 declare global {
-  interface StencilElementInterfaces {
-    'FloatingHeader': Components.FloatingHeader;
-    'GitEdit': Components.GitEdit;
-  }
-
-  interface StencilIntrinsicElements {
-    'floating-header': Components.FloatingHeaderAttributes;
-    'git-edit': Components.GitEditAttributes;
-  }
 
 
   interface HTMLFloatingHeaderElement extends Components.FloatingHeader, HTMLStencilElement {}
@@ -80,16 +46,51 @@ declare global {
     prototype: HTMLGitEditElement;
     new (): HTMLGitEditElement;
   };
-
   interface HTMLElementTagNameMap {
-    'floating-header': HTMLFloatingHeaderElement
-    'git-edit': HTMLGitEditElement
-  }
-
-  interface ElementTagNameMap {
     'floating-header': HTMLFloatingHeaderElement;
     'git-edit': HTMLGitEditElement;
   }
-
-
 }
+
+declare namespace LocalJSX {
+  interface FloatingHeader {
+    /**
+    * The trigger treshold to activate the floating header
+    */
+    'activeClassName'?: string;
+    /**
+    * The trigger treshold to activate the floating header
+    */
+    'triggerTreshold'?: number;
+  }
+  interface GitEdit {
+    /**
+    * The file path in the repo
+    */
+    'filePath'?: string;
+    'large'?: boolean;
+    /**
+    * The repo base url
+    */
+    'repo'?: string;
+  }
+
+  interface IntrinsicElements {
+    'floating-header': FloatingHeader;
+    'git-edit': GitEdit;
+  }
+}
+
+export { LocalJSX as JSX };
+
+
+declare module "@stencil/core" {
+  export namespace JSX {
+    interface IntrinsicElements {
+      'floating-header': LocalJSX.FloatingHeader & JSXBase.HTMLAttributes<HTMLFloatingHeaderElement>;
+      'git-edit': LocalJSX.GitEdit & JSXBase.HTMLAttributes<HTMLGitEditElement>;
+    }
+  }
+}
+
+
