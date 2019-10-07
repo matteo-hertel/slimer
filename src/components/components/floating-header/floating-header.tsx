@@ -1,11 +1,11 @@
 import { Component, Listen, Prop, State } from '@stencil/core';
 
-@Component({
+export @Component({
   tag: 'floating-header',
   styleUrl: 'floating-header.css',
   shadow: true,
 })
-export class FloatingHeader {
+class FloatingHeader {
   progressBar!: HTMLElement;
 
   private ticking = false;
@@ -21,12 +21,12 @@ export class FloatingHeader {
    */
   @Prop() activeClassName: string = 'FloatingHeader--active';
 
-  @Listen('window:scroll')
+  @Listen('scroll', { target: 'window' })
   private onScroll(ev) {
     this.requestTick(this.updateValue.bind(this, window.scrollY));
   }
 
-  @Listen('window:resize')
+  @Listen('resize', { target: 'window' })
   private onResize(ev) {
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
@@ -51,6 +51,7 @@ export class FloatingHeader {
   }
 
   private updateMax(windowHeight: number, documentHeight) {
+    if (!this.progressBar) return;
     this.progressBar.setAttribute('max', String(documentHeight - windowHeight));
     this.ticking = false;
   }

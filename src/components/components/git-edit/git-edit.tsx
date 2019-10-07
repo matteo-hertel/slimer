@@ -5,7 +5,7 @@ import { Component, Listen, Prop, State } from '@stencil/core';
   styleUrl: 'git-edit.css',
   shadow: true,
 })
-export class GitEdit {
+class GitEdit {
   /**
    * The repo base url
    */
@@ -50,3 +50,4 @@ export class GitEdit {
     );
   }
 }
+export GitEdit
